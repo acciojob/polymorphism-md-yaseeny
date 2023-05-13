@@ -24,13 +24,13 @@ public class Main {
             this.y = y;
         }
 
-        public Product() {
-        }
+//        public Product() {
+//        }
     }
 
     public static void main(String[] args) {
 
-        Product p = new Product();
+//        Product p = new Product();
         Product p1 = new Product(10,15);
         Product p2 = new Product(10,15,20);
         Product p3 = new Product(2.0,3.0);
