@@ -2,26 +2,17 @@ package com.driver;
 
 public class Main {
     public static class  Product{
-        private int x;
-        private int y;
-        private int z;
-        private double a;
-        private double b;
 
-        public Product(double a, double b) {
-            this.a = a;
-            this.b = b;
+        public double product(double a, double b) {
+            return a*b;
         }
 
-        public Product(int x, int y, int z) {
-            this.x = x;
-            this.y = y;
-            this.z = z;
+        public int product(int x, int y, int z) {
+            return x*y*z;
         }
 
-        public Product(int x, int y) {
-            this.x = x;
-            this.y = y;
+        public int product(int x, int y) {
+           return x*y;
         }
 
 //        public Product() {
@@ -30,10 +21,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-//        Product p = new Product();
-        Product p1 = new Product(10,15);
-        Product p2 = new Product(10,15,20);
-        Product p3 = new Product(2.0,3.0);
+        Product p = new Product();
+       System.out.println(p.product(2,5));
+       System.out.println(p.product(2,5,9));
+       System.out.println(p.product(2.0,5.0));
     }
 
 }
